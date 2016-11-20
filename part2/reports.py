@@ -9,7 +9,7 @@ with open(file_name) as file_name:
 # Text indexing
 text_count_game = text.split("\n")
 index = [elem.strip().split("\t") for elem in text_count_game]
-del index[-1]
+del index[-1]   # If you run test.py in terminal(not in VS-Code) -> use # before this line!!!
 type_index = list(zip(*index))
 
 # Report functions
